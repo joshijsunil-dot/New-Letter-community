@@ -34,7 +34,7 @@ export default async (request) => {
       `,
     ]);
 
-    const totals = { loved: 0, useful: 0, insightful: 0, resonated: 0 };
+    const totals = { loved: 0, useful: 0, insightful: 0, resonated: 0, taking_action: 0 };
     for (const row of reactions) totals[row.reaction] = row.count;
 
     return json(200, {

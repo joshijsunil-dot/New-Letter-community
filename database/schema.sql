@@ -18,7 +18,7 @@ CREATE INDEX IF NOT EXISTS comments_public_idx
 CREATE TABLE IF NOT EXISTS newsletter_reactions (
   newsletter_id text NOT NULL,
   visitor_hash char(64) NOT NULL,
-  reaction varchar(20) NOT NULL CHECK (reaction IN ('loved', 'useful', 'insightful', 'resonated')),
+  reaction varchar(20) NOT NULL CHECK (reaction IN ('loved', 'useful', 'insightful', 'resonated', 'taking_action')),
   updated_at timestamptz NOT NULL DEFAULT now(),
   PRIMARY KEY (newsletter_id, visitor_hash)
 );
@@ -48,3 +48,12 @@ CREATE INDEX IF NOT EXISTS action_events_lookup_idx
 -- Replace newsletter_app with your actual Neon role if desired.
 -- GRANT SELECT, INSERT, UPDATE ON comments, newsletter_reactions, votes, action_events TO newsletter_app;
 -- GRANT USAGE, SELECT ON SEQUENCE action_events_id_seq TO newsletter_app;
+
+
+-- Run this migration on databases created before the Taking Action reaction was added.
+ALTER TABLE newsletter_reactions
+  DROP CONSTRAINT IF EXISTS newsletter_reactions_reaction_check;
+
+ALTER TABLE newsletter_reactions
+  ADD CONSTRAINT newsletter_reactions_reaction_check
+  CHECK (reaction IN ('loved', 'useful', 'insightful', 'resonated', 'taking_action'));

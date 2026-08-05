@@ -1,7 +1,7 @@
 import { createHash, timingSafeEqual } from "node:crypto";
 import { PublicError } from "./http.mjs";
 
-const REACTIONS = new Set(["loved", "useful", "insightful", "resonated"]);
+const REACTIONS = new Set(["loved", "useful", "insightful", "resonated", "taking_action"]);
 const VOTES = new Set([-1, 1]);
 
 export function newsletterId() {

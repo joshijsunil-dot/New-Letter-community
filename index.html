@@ -1,208 +1,310 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>1% Progress — Edition 077</title>
-  <meta name="description" content="Edition 077: five small ideas about attention, courage, recovery, craft, and momentum." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ffd400">
+  <meta name="description" content="1% Progress — Edition 078. Five stories on pausing before reacting, asking better questions, designing your week, thinking laterally, and changing your mind well.">
+  <title>1% Progress — Edition 078 · Change Labs</title>
   <style>
-    :root{--paper:#f3f0e7;--ink:#171714;--muted:#6e6b63;--line:#cbc7bb;--accent:#ff5a36;--green:#395a46;--max:1500px}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit}button{font:inherit}.shell{max-width:var(--max);margin:auto;border-left:1px solid var(--line);border-right:1px solid var(--line)}
-    .topbar{position:sticky;top:0;z-index:10;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:17px 26px;border-bottom:1px solid var(--line);background:rgba(243,240,231,.93);backdrop-filter:blur(12px);font-size:11px;letter-spacing:.13em;text-transform:uppercase}.brand{text-decoration:none;font-weight:700}.edition-meta{text-align:center}.top-link{justify-self:end;text-decoration:none}.top-link:hover{text-decoration:underline}
-    .hero{position:relative;min-height:860px;padding:80px 28px 48px;overflow:hidden;border-bottom:1px solid var(--line)}.hero:after{content:"77";position:absolute;right:-25px;top:35px;font:400 clamp(180px,29vw,430px)/.8 Georgia,serif;color:rgba(23,23,20,.055);letter-spacing:-.09em;pointer-events:none}.kicker{font-size:11px;letter-spacing:.14em;text-transform:uppercase}.hero h1{position:relative;z-index:1;margin:105px 0 35px;font:400 clamp(92px,18vw,280px)/.72 Georgia,serif;letter-spacing:-.075em}.hero h1 span{display:block}.hero h1 em{font-style:normal;color:var(--accent)}.hero-grid{display:grid;grid-template-columns:1fr minmax(300px,650px);gap:50px;align-items:end}.hero-note{font:400 clamp(21px,2.4vw,37px)/1.24 Georgia,serif}.hero-note strong{font-weight:400;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}.progress{display:flex;justify-content:space-between;align-items:end;margin-top:100px;padding-top:15px;border-top:1px solid var(--line);font-size:12px;text-transform:uppercase;letter-spacing:.11em}.progress span:last-child{color:var(--muted)}
-    .toc{padding:75px 28px 95px;border-bottom:1px solid var(--line)}.section-label{margin:0 0 35px;font-size:11px;letter-spacing:.15em;text-transform:uppercase}.toc a{display:grid;grid-template-columns:105px 1fr 32px;gap:20px;padding:20px 0;border-top:1px solid var(--line);text-decoration:none;align-items:center}.toc a:last-child{border-bottom:1px solid var(--line)}.toc small{font-size:10px;letter-spacing:.12em}.toc strong{font:400 clamp(22px,3vw,43px)/1.05 Georgia,serif}.toc i{font-style:normal;font-size:24px;transition:transform .2s}.toc a:hover i{transform:translateX(7px)}
-    .story{padding:105px 28px 85px;border-bottom:1px solid var(--line);scroll-margin-top:58px}.story-head{display:grid;grid-template-columns:minmax(90px,.34fr) 1fr;gap:45px}.story-no{font:400 clamp(76px,11vw,168px)/.8 Georgia,serif;letter-spacing:-.06em}.story-type{font-size:11px;letter-spacing:.15em;text-transform:uppercase;margin:5px 0 23px}.story h2{max-width:1000px;margin:0;font:400 clamp(48px,8vw,122px)/.91 Georgia,serif;letter-spacing:-.052em}.dek{max-width:630px;margin:28px 0 0;font:400 clamp(19px,2vw,29px)/1.35 Georgia,serif;color:#38362f}.body-grid{display:grid;grid-template-columns:minmax(220px,.7fr) minmax(300px,720px);gap:55px;margin-top:75px;align-items:start}.body-copy{font-size:18px;line-height:1.72}.body-copy p{margin:0 0 24px}.drop:first-letter{float:left;font:400 88px/.72 Georgia,serif;padding:8px 10px 0 0;color:var(--accent)}.visual{min-height:430px;border:1px solid var(--ink);overflow:hidden;position:relative;background:#ddd}.visual svg{display:block;width:100%;height:100%;position:absolute;inset:0}.caption{font-size:10px;text-transform:uppercase;letter-spacing:.12em;margin-top:10px;color:var(--muted)}.story-foot{display:flex;justify-content:space-between;gap:30px;margin-top:75px;padding-top:17px;border-top:1px solid var(--line);font-size:11px;letter-spacing:.1em;text-transform:uppercase}.story-foot a{text-decoration:none}.story-foot a:hover{text-decoration:underline}
-    .principles{counter-reset:item;margin-top:35px;border-top:1px solid var(--line)}.principle{display:grid;grid-template-columns:50px 1fr;gap:18px;padding:22px 0;border-bottom:1px solid var(--line)}.principle:before{counter-increment:item;content:"0" counter(item);font-size:10px;letter-spacing:.12em;padding-top:5px}.principle strong{display:block;font:400 25px/1.15 Georgia,serif;margin-bottom:7px}.principle p{margin:0;font-size:15px;line-height:1.55;color:#4d4a43}
-    .quote{max-width:1120px;margin:95px auto 20px;padding-top:45px;border-top:1px solid var(--line)}.quote-mark{font:400 105px/.55 Georgia,serif;color:var(--accent)}blockquote{margin:20px 0 0;font:400 clamp(43px,7vw,105px)/1.02 Georgia,serif;letter-spacing:-.045em}cite{display:block;margin-top:30px;font-style:normal;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
-    .manifesto{display:grid;grid-template-columns:1fr 1fr;min-height:670px;border-bottom:1px solid var(--line)}.manifesto .panel{padding:85px 28px}.manifesto .panel:first-child{background:var(--ink);color:var(--paper)}.manifesto h3{margin:35px 0 0;font:400 clamp(55px,8vw,120px)/.93 Georgia,serif;letter-spacing:-.055em}.manifesto p{max-width:560px;font-size:18px;line-height:1.65}.big-77{font:400 clamp(170px,23vw,360px)/.78 Georgia,serif;color:var(--accent);letter-spacing:-.08em}
-    .reactions{text-align:center;padding:95px 28px;border-bottom:1px solid var(--line)}.reactions h3{margin:20px 0 45px;font:400 clamp(52px,8vw,110px)/.9 Georgia,serif;letter-spacing:-.05em}.reaction-row{display:flex;gap:11px;justify-content:center;flex-wrap:wrap}.reaction{border:1px solid var(--ink);background:transparent;padding:13px 20px;border-radius:100px;cursor:pointer}.reaction:hover,.reaction.active{background:var(--ink);color:var(--paper)}
-    footer{padding:90px 28px 35px}.signoff{font:400 clamp(65px,12vw,180px)/.82 Georgia,serif;letter-spacing:-.06em}.footer-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:95px;padding-top:20px;border-top:1px solid var(--line);font-size:11px;line-height:1.7;text-transform:uppercase;letter-spacing:.1em}.footer-grid div:last-child{text-align:right}.toast{position:fixed;right:20px;bottom:20px;background:var(--ink);color:var(--paper);padding:13px 18px;opacity:0;transform:translateY(8px);transition:.2s;pointer-events:none}.toast.show{opacity:1;transform:none}
-
-    .community{padding:95px 28px;border-bottom:1px solid var(--line)}.community-wrap{max-width:980px;margin:auto}.community h3{margin:20px 0 18px;font:400 clamp(52px,8vw,110px)/.9 Georgia,serif;letter-spacing:-.05em}.community-intro{max-width:680px;font-size:17px;line-height:1.6;color:var(--muted)}.community-status{min-height:24px;margin:14px 0;font-size:13px}.community-status.error{color:#8a2418}.community-status.success{color:var(--green)}.reaction-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:35px 0 20px}.reaction-choice{display:flex;justify-content:space-between;gap:10px;border:1px solid var(--ink);background:transparent;padding:14px 16px;cursor:pointer}.reaction-choice:hover,.reaction-choice[aria-pressed="true"]{background:var(--ink);color:var(--paper)}.newsletter-votes{display:flex;gap:10px;align-items:center;margin-bottom:50px}.vote-button{border:1px solid var(--line);background:transparent;padding:10px 14px;cursor:pointer}.vote-button:hover{border-color:var(--ink)}.comment-form{display:grid;gap:14px;padding:28px;border:1px solid var(--line);background:rgba(255,255,255,.18)}.comment-form label{font-size:11px;letter-spacing:.12em;text-transform:uppercase}.comment-form input,.comment-form textarea,.comment-form select{width:100%;border:1px solid var(--line);background:var(--paper);color:var(--ink);padding:13px;font:inherit}.comment-form textarea{min-height:130px;resize:vertical}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.comment-submit{justify-self:start;border:1px solid var(--ink);background:var(--ink);color:var(--paper);padding:13px 22px;cursor:pointer}.comment-submit:disabled{opacity:.55;cursor:wait}.honeypot{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;overflow:hidden!important}.comments-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin:60px 0 20px;padding-bottom:14px;border-bottom:1px solid var(--line)}.comments-head h4{margin:0;font:400 34px/1 Georgia,serif}.comment-list{display:grid;gap:0}.comment-card{padding:24px 0;border-bottom:1px solid var(--line)}.comment-meta{display:flex;justify-content:space-between;gap:16px;margin-bottom:10px;font-size:11px;letter-spacing:.08em;text-transform:uppercase}.comment-body{white-space:pre-wrap;overflow-wrap:anywhere;font-size:16px;line-height:1.6}.comment-actions{display:flex;gap:8px;margin-top:14px}.comment-actions button{border:1px solid var(--line);background:transparent;padding:8px 10px;cursor:pointer}.empty-comments{padding:30px 0;color:var(--muted)}
-    @media(max-width:760px){.shell{border:0}.topbar{grid-template-columns:1fr auto}.edition-meta{display:none}.hero{min-height:690px;padding-top:55px}.hero h1{margin-top:95px}.hero-grid,.body-grid,.manifesto,.footer-grid{grid-template-columns:1fr}.hero-grid{gap:22px}.progress{margin-top:65px}.story-head{grid-template-columns:1fr}.story-no{font-size:74px}.story h2{font-size:54px}.body-grid{margin-top:50px}.visual{min-height:340px}.manifesto .panel{min-height:520px}.footer-grid div:last-child{text-align:left}.toc a{grid-template-columns:70px 1fr 20px}.story-foot{flex-direction:column}.hero:after{top:100px}.quote{margin-top:65px}.reaction-grid{grid-template-columns:1fr 1fr}.form-row{grid-template-columns:1fr}.comment-form{padding:20px}.comments-head{align-items:start;flex-direction:column}}
+    :root{
+      --yellow:#ffd400;--yellow-dark:#e9b900;--cream:#f6f1e5;--cream-2:#fff8cb;
+      --black:#080808;--ink:#10100e;--muted:#655f53;--line:#cfc8b9;--white:#fffef9;
+      --shadow:12px 12px 0 var(--yellow);--shadow-black:12px 12px 0 var(--black);
+      --sans:Arial,Helvetica,sans-serif;--display:"Arial Black",Arial,Helvetica,sans-serif;
+      --serif:Georgia,"Times New Roman",serif;--mono:"Courier New",Courier,monospace;
+      --max:1760px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;background:var(--black)}
+    body{margin:0;background:var(--cream);color:var(--black);font-family:var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    img,svg,canvas{display:block;max-width:100%}button,input,select,textarea{font:inherit}button,a{touch-action:manipulation}
+    a{color:inherit}.skip-link{position:fixed;left:16px;top:-80px;z-index:999;background:var(--black);color:var(--yellow);padding:12px 18px}.skip-link:focus{top:16px}
+    .reading-progress{position:fixed;left:0;top:0;z-index:200;width:100%;height:4px;background:transparent}.reading-progress span{display:block;width:0;height:100%;background:var(--black)}
+    .page{max-width:var(--max);margin:auto;background:var(--cream)}
+    .topbar{height:64px;padding:0 clamp(22px,3vw,52px);display:grid;grid-template-columns:1fr auto 1fr;align-items:center;background:var(--yellow);font:700 12px/1 var(--mono);letter-spacing:.05em}
+    .brand{text-decoration:none;font-family:var(--display);font-size:14px}.top-meta{font-weight:400;color:#3c351b}.top-actions{justify-self:end;display:flex;gap:22px}.top-actions a,.top-actions button{border:0;border-bottom:1px solid var(--black);background:none;padding:3px 0;font:700 12px/1 var(--mono);cursor:pointer;text-decoration:none}
+    .hero{position:relative;min-height:810px;background:var(--yellow);padding:54px clamp(22px,3vw,52px) 0;overflow:hidden}.hero-meta{font:400 12px/1.5 var(--mono);letter-spacing:.16em;text-transform:uppercase}.hero-number{position:absolute;right:-50px;top:72px;font:900 clamp(260px,34vw,630px)/.72 var(--display);letter-spacing:-.09em;color:rgba(0,0,0,.055);user-select:none}.hero h1{position:relative;z-index:2;margin:30px 0 24px;font:900 clamp(92px,13vw,230px)/.79 var(--display);letter-spacing:-.075em}.hero h1 span{display:block}.hero-dek{position:relative;z-index:2;max-width:660px;margin:0;font:italic clamp(24px,2.25vw,41px)/1.55 var(--serif)}.hero-streak{position:relative;z-index:2;margin-top:28px;font:400 12px/1.45 var(--mono)}
+    .bars{position:absolute;left:0;right:0;bottom:0;height:118px;display:flex;align-items:end;gap:6px;padding:0 clamp(22px,3vw,52px)}.bars span{flex:1;background:#1b190e;min-height:14px;transform-origin:bottom;animation:growbar 900ms cubic-bezier(.2,.8,.2,1) both}.bars span:nth-child(1){height:16%}.bars span:nth-child(2){height:24%}.bars span:nth-child(3){height:34%}.bars span:nth-child(4){height:42%}.bars span:nth-child(5){height:53%}.bars span:nth-child(6){height:61%}.bars span:nth-child(7){height:70%}.bars span:nth-child(8){height:79%}.bars span:nth-child(9){height:88%}.bars span:nth-child(10){height:96%}@keyframes growbar{from{transform:scaleY(0)}}
+    .toc{background:var(--black);color:var(--white);padding:38px clamp(22px,3vw,52px) 42px}.toc-label{color:var(--yellow);font:700 12px/1 var(--mono);letter-spacing:.12em;margin-bottom:28px}.toc-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:34px}.toc a{min-height:62px;padding-left:14px;border-left:2px solid var(--yellow);text-decoration:none;display:flex;flex-direction:column;justify-content:center}.toc small{color:var(--yellow);font:700 10px/1 var(--mono);margin-bottom:10px}.toc strong{font:700 14px/1.25 var(--sans)}.toc a:hover strong{text-decoration:underline;text-underline-offset:4px}
+    .story{min-height:760px;padding:72px clamp(18px,2vw,32px);display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;border-bottom:1px solid rgba(0,0,0,.06);scroll-margin-top:20px}.story.reverse .story-copy{order:2}.story.reverse .story-visual{order:1}.story-copy{max-width:790px}.story-no{font:900 clamp(72px,7vw,124px)/.8 var(--display);letter-spacing:-.05em;color:var(--yellow-dark)}.story-type{margin:20px 0 24px;font:400 12px/1 var(--mono);letter-spacing:.25em;text-transform:uppercase}.story h2{margin:0 0 18px;font:900 clamp(42px,4.25vw,78px)/.95 var(--display);letter-spacing:-.045em}.story h2 em{font:italic 400 1.05em/1 var(--serif)}.dek{margin:0 0 26px;font:italic 400 clamp(20px,1.5vw,28px)/1.45 var(--serif);color:#5a5043}.story-copy p{font-size:17px;line-height:1.58;margin:0 0 19px}.story-foot{display:flex;gap:22px;align-items:center;margin-top:26px;font:400 11px/1 var(--mono)}.story-foot a{text-decoration:none;border-bottom:1px solid var(--yellow-dark);padding-bottom:4px}.story-visual{position:relative;min-height:650px;border-radius:16px;background:var(--black);box-shadow:var(--shadow);overflow:hidden}.story.reverse .story-visual{box-shadow:var(--shadow-black)}
+    .poster{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:8%;overflow:hidden}.poster-grid{background-color:#0b0b0b;background-image:linear-gradient(rgba(255,212,0,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(255,212,0,.12) 1px,transparent 1px);background-size:48px 48px}.poster-copy{position:relative;color:var(--white);font:italic clamp(36px,4vw,72px)/1.08 var(--serif);max-width:650px}.poster-copy:before{content:'“';display:block;color:var(--yellow);font:900 88px/.45 var(--display);margin-bottom:30px}.poster-copy small{display:block;margin-top:34px;color:var(--yellow);font:700 12px/1.4 var(--mono);letter-spacing:.08em}
+    .orbit{background:var(--yellow)}.orbit:before,.orbit:after{content:"";position:absolute;border:3px solid var(--black);border-radius:50%}.orbit:before{width:62%;aspect-ratio:1;animation:spin 18s linear infinite}.orbit:after{width:35%;aspect-ratio:1;border-style:dashed;animation:spin 12s linear infinite reverse}.orbit-center{position:relative;z-index:2;width:190px;aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:var(--black);color:var(--yellow);font:900 24px/1.1 var(--display);text-align:center}.orbit-dot{position:absolute;width:28px;aspect-ratio:1;border-radius:50%;background:var(--black);top:18%;left:19%;box-shadow:370px 320px 0 var(--black),440px 40px 0 var(--black)}@keyframes spin{to{transform:rotate(360deg)}}
+    .week-card{background:#090909;color:var(--white);padding:7%;display:flex;flex-direction:column;justify-content:center}.week-card h3{font:900 clamp(40px,5vw,86px)/.9 var(--display);margin:0 0 36px;letter-spacing:-.05em}.week-list{counter-reset:w}.week-item{counter-increment:w;display:grid;grid-template-columns:46px 1fr;gap:18px;padding:22px 0;border-top:1px solid #313131}.week-item:before{content:"0" counter(w);font:700 12px/1 var(--mono);color:var(--yellow)}.week-item strong{color:var(--yellow);font-size:16px}.week-item p{margin:5px 0 0;color:#f1efe8;font-size:15px;line-height:1.48}
+    .belief-poster{background:var(--yellow);color:var(--black);padding:9%;display:flex;flex-direction:column;justify-content:center}.belief-poster .stamp{width:max-content;border:2px solid;padding:9px 12px;font:700 11px/1 var(--mono);transform:rotate(-3deg)}.belief-poster blockquote{margin:50px 0 0;font:italic clamp(42px,4vw,72px)/1.12 var(--serif)}.belief-poster small{margin-top:34px;font:700 11px/1.4 var(--mono)}
+    .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}.reveal.in{opacity:1;transform:none}
+    /* Editorial image panels */
+    .editorial-image{position:absolute;inset:0;overflow:hidden;background:#171713}
+    .editorial-image svg{width:100%;height:100%;transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+    .story-visual:hover .editorial-image svg{transform:scale(1.025) rotate(.25deg)}
+    .image-caption{position:absolute;left:24px;right:24px;bottom:20px;display:flex;justify-content:space-between;gap:18px;color:var(--white);font:700 10px/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase;text-shadow:0 1px 12px #000}
+    .video-visual{cursor:pointer}.video-play{position:absolute;left:50%;top:50%;width:98px;height:98px;transform:translate(-50%,-50%);border-radius:50%;border:2px solid var(--yellow);background:rgba(0,0,0,.72);color:var(--yellow);display:grid;place-items:center;font-size:30px;transition:.25s;box-shadow:0 0 0 12px rgba(255,212,0,.08)}.video-visual:hover .video-play{transform:translate(-50%,-50%) scale(1.08);background:var(--yellow);color:#000}.video-meta{position:absolute;top:22px;left:22px;background:var(--yellow);color:#000;padding:8px 10px;font:700 10px/1 var(--mono)}
+    /* Guided reading rail */
+    .reading-rail{position:fixed;left:18px;top:50%;z-index:120;transform:translateY(-50%);display:grid;gap:8px;padding:12px 8px;background:rgba(246,241,229,.88);border:1px solid rgba(0,0,0,.16);backdrop-filter:blur(8px)}.reading-rail a{width:28px;height:28px;display:grid;place-items:center;text-decoration:none;font:700 9px/1 var(--mono);border:1px solid transparent;color:#6f685b;transition:.2s}.reading-rail a:hover,.reading-rail a.active{background:var(--black);color:var(--yellow);border-color:var(--black)}.reading-rail a.game-dot{color:#000;background:var(--yellow)}.reading-rail a.game-dot.active{box-shadow:0 0 0 3px var(--black)}
+    /* Editorial Room escape game */
+    .escape-shell{min-height:720px;background:#090909;color:var(--white);box-shadow:var(--shadow);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}.escape-top{display:flex;justify-content:space-between;gap:20px;align-items:center;padding:16px 20px;border-bottom:1px solid #2c2c2c;font:700 11px/1 var(--mono);letter-spacing:.1em}.escape-top span:last-child{color:var(--yellow)}.escape-layout{display:grid;grid-template-columns:1.4fr .72fr;flex:1;min-height:650px}.room-scene{position:relative;min-height:650px;overflow:hidden;background:linear-gradient(#22201a 0 62%,#17140f 62%);border-right:1px solid #333}.room-scene:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 49.7%,rgba(255,255,255,.035) 50%,transparent 50.3%),linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px);background-size:100% 100%,100% 46px;pointer-events:none}.room-object{position:absolute;border:0;background:none;color:inherit;cursor:pointer;transition:filter .2s,transform .2s}.room-object:hover,.room-object:focus-visible{filter:drop-shadow(0 0 10px rgba(255,212,0,.75));outline:none}.room-object:focus-visible{box-shadow:0 0 0 3px var(--yellow)}.room-object[data-seen="true"]:after{content:"✓";position:absolute;right:-8px;top:-8px;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--yellow);color:#000;font:900 11px/1 var(--sans)}
+    .door-object{left:5%;top:16%;width:21%;height:47%;background:#100f0d;border:5px solid #494337}.door-object:before{content:"";position:absolute;inset:12px;border:1px solid #302d26}.door-object:after{content:"";position:absolute;right:12px;top:52%;width:9px;height:9px;border-radius:50%;background:var(--yellow)}
+    .window-object{right:6%;top:10%;width:29%;height:29%;border:5px solid #514a3d;background:linear-gradient(145deg,#17222b,#596a72)}.window-object:before,.window-object:after{content:"";position:absolute;background:#514a3d}.window-object:before{left:49%;top:0;width:5px;height:100%}.window-object:after{left:0;top:49%;width:100%;height:5px}
+    .clock-object{left:36%;top:10%;width:88px;height:88px;border-radius:50%;border:6px solid #d4c8a6;background:#eee3c5;color:#111;font:900 14px/1 var(--mono)}.clock-object:before{content:"";position:absolute;width:3px;height:27px;left:50%;top:19px;background:#111;transform-origin:bottom;transform:rotate(95deg)}.clock-object:after{content:"";position:absolute;width:3px;height:20px;left:50%;top:27px;background:#111;transform-origin:bottom;transform:rotate(205deg)}
+    .desk-object{left:30%;bottom:19%;width:47%;height:23%;background:#4c3320;border-top:10px solid #684528}.desk-object:before{content:"";position:absolute;left:7%;right:7%;top:18%;height:28%;border:3px solid #2d1d12;background:#3d2819}.desk-object:after{content:"LOCKED";position:absolute;left:50%;top:30%;transform:translate(-50%,-50%);font:700 9px/1 var(--mono);color:#d7c39c}.desk-object.unlocked:after{content:"OPEN";color:var(--yellow)}
+    .lamp-object{right:8%;bottom:24%;width:13%;height:27%}.lamp-object:before{content:"";position:absolute;left:30%;top:31%;width:6px;height:58%;background:#b5a77c}.lamp-object:after{content:"";position:absolute;left:4%;top:0;width:92%;height:38%;clip-path:polygon(20% 0,80% 0,100% 100%,0 100%);background:var(--yellow)}
+    .plant-object{left:7%;bottom:16%;width:15%;height:25%}.plant-object:before{content:"✦";position:absolute;left:0;right:0;top:-30%;font-size:90px;color:#71824e;line-height:1}.plant-object:after{content:"";position:absolute;left:22%;right:22%;bottom:0;height:45%;background:#8d5b35;clip-path:polygon(8% 0,92% 0,78% 100%,22% 100%)}
+    .books-object{left:35%;bottom:42%;width:28%;height:11%;background:linear-gradient(#d34a32 0 27%,transparent 27% 34%,#d7b73d 34% 63%,transparent 63% 70%,#45749a 70%);transform:rotate(-1deg)}.books-object:before{content:"UPSIDE DOWN";position:absolute;right:8px;bottom:2px;font:700 7px/1 var(--mono);color:#fff;transform:rotate(180deg)}
+    .frame-object{right:9%;top:43%;width:19%;height:18%;border:7px solid #6b4b2e;background:var(--cream-2)}.frame-object:before{content:"ASK BETTER\A QUESTIONS";white-space:pre;position:absolute;inset:0;display:grid;place-items:center;color:#111;font:900 11px/1.1 var(--display);text-align:center}
+    .rug-object{left:23%;bottom:2%;width:60%;height:15%;background:repeating-linear-gradient(90deg,#a53e2d 0 22px,#d9a84d 22px 44px,#1a5260 44px 66px);clip-path:polygon(4% 8%,96% 0,100% 88%,0 100%);transform-origin:left center}.rug-object.moved{transform:translateX(42%) rotate(5deg)}.rug-object .rug-label{position:absolute;inset:0;display:grid;place-items:center;font:900 11px/1 var(--mono);text-shadow:0 1px 4px #000}.hidden-key{position:absolute;left:42%;bottom:8%;font-size:34px;opacity:0;transform:scale(.6);transition:.35s;pointer-events:none}.hidden-key.found{opacity:1;transform:scale(1)}
+    .escape-console{padding:28px;display:flex;flex-direction:column;justify-content:space-between;background:#0b0b0b}.escape-console h4{margin:0 0 14px;font:900 clamp(30px,2.7vw,48px)/.95 var(--display)}.escape-console p{font-size:14px;line-height:1.55;color:#d9d4c7}.mission{border-left:3px solid var(--yellow);padding:12px 14px;background:#15140f}.inventory{margin:22px 0}.inventory-title{font:700 10px/1 var(--mono);color:#a8a292;letter-spacing:.1em;margin-bottom:10px}.inventory-items{display:flex;gap:8px;flex-wrap:wrap}.inventory-item{border:1px solid #4e4a40;padding:8px 10px;color:#7f796d;font:700 10px/1 var(--mono)}.inventory-item.has{border-color:var(--yellow);color:var(--yellow);background:#24200c}.clue-log{list-style:none;margin:18px 0;padding:0;max-height:170px;overflow:auto;border-top:1px solid #333}.clue-log li{padding:10px 0;border-bottom:1px solid #292929;color:#c7c0b3;font-size:12px;line-height:1.4}.escape-status{min-height:96px;padding:14px;background:#15140f;border:1px solid #333;font-size:14px;line-height:1.5}.escape-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}.escape-actions button{border:1px solid #6d675b;background:transparent;color:#fff;padding:10px 13px;cursor:pointer}.escape-actions button:hover{border-color:var(--yellow);color:var(--yellow)}.escape-complete{position:absolute;inset:0;z-index:9;display:none;place-items:center;padding:40px;text-align:center;background:rgba(6,6,5,.96)}.escape-complete.show{display:grid}.escape-complete-inner{max-width:570px}.escape-complete .unlock{color:var(--yellow);font:700 11px/1 var(--mono);letter-spacing:.15em}.escape-complete h5{margin:20px 0;font:900 clamp(43px,5vw,78px)/.9 var(--display)}.escape-complete blockquote{margin:26px 0;font:italic 24px/1.4 var(--serif);color:#f8e7a0}.escape-complete button{border:1px solid var(--yellow);background:var(--yellow);color:#000;padding:12px 18px;font-weight:700;cursor:pointer}
+    .community{padding:88px clamp(18px,4vw,84px);background:var(--cream)}.community-card{max-width:1460px;margin:auto;border:3px solid var(--black);border-radius:18px;background:var(--white);box-shadow:var(--shadow);overflow:hidden}.community-head{text-align:center;padding:48px 24px 30px}.eyebrow{font:400 12px/1 var(--mono);letter-spacing:.24em;text-transform:uppercase}.community h3{margin:20px 0 14px;font:900 clamp(38px,4vw,68px)/.95 var(--display);letter-spacing:-.04em}.community h3 em{font:italic 400 1em/1 var(--serif)}.community-intro{font:italic 18px/1.5 var(--serif);color:#5b554a}.reaction-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;padding:10px 24px 30px}.reaction{position:relative;min-height:72px;border:2px solid var(--black);background:var(--cream);display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:10px;padding:14px;cursor:pointer;transition:.2s;overflow:visible}.reaction:hover{transform:translateY(-5px);box-shadow:0 6px 0 rgba(0,0,0,.15)}.reaction[aria-pressed="true"]{background:var(--black);color:var(--white)}.reaction-icon{font-size:23px;display:inline-block}.reaction-label{font-weight:700;text-align:left}.reaction-count{font:700 15px/1 var(--mono)}.reaction-feedback{position:absolute;left:50%;bottom:calc(100% + 8px);transform:translate(-50%,8px);opacity:0;background:var(--black);color:var(--yellow);padding:7px 10px;white-space:nowrap;font:700 10px/1 var(--mono);pointer-events:none}.reaction.is-animating .reaction-feedback{animation:feedback .9s ease}.reaction[data-reaction="loved"].is-animating .reaction-icon{animation:heart .7s ease}.reaction[data-reaction="useful"].is-animating .reaction-icon{animation:jump .65s ease}.reaction[data-reaction="insightful"].is-animating .reaction-icon{animation:glow .75s ease}.reaction[data-reaction="resonated"].is-animating .reaction-icon{animation:bounce .7s ease}.reaction[data-reaction="taking_action"].is-animating .reaction-icon{animation:rocket .8s ease}@keyframes feedback{0%{opacity:0;transform:translate(-50%,8px)}20%,70%{opacity:1;transform:translate(-50%,0)}100%{opacity:0;transform:translate(-50%,-5px)}}@keyframes heart{35%{transform:scale(1.5)}60%{transform:scale(.9)}80%{transform:scale(1.2)}}@keyframes jump{40%{transform:translateY(-11px) rotate(-12deg)}70%{transform:translateY(2px)}}@keyframes glow{40%{transform:scale(1.35);filter:drop-shadow(0 0 8px #ffd400)}70%{transform:rotate(10deg)}}@keyframes bounce{35%{transform:translateY(-10px) rotate(-7deg)}65%{transform:translateY(2px) rotate(7deg)}}@keyframes rocket{45%{transform:translate(10px,-15px) rotate(10deg);opacity:.7}60%{opacity:0}61%{transform:translate(-7px,8px);opacity:0}100%{transform:none;opacity:1}}
+    .overall{display:flex;align-items:center;justify-content:center;gap:10px;padding:18px 24px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.overall-label{margin-right:8px;font-weight:700}.overall button{border:1px solid var(--line);background:transparent;padding:10px 14px;cursor:pointer}.overall button:hover{background:var(--yellow)}
+    .comment-form{padding:34px 24px 40px}.prompt{font:900 clamp(28px,3vw,48px)/1.04 var(--display);margin:0 0 9px}.prompt-sub{margin:0 0 28px;color:var(--muted);font:italic 17px/1.45 var(--serif)}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:8px}.field label{font:700 11px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);background:var(--cream);padding:14px;color:var(--black)}.field textarea{min-height:155px;resize:vertical}.field.full{grid-column:1/-1}.submit-row{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-top:16px}.submit{border:0;background:var(--black);color:var(--white);padding:15px 24px;font-weight:700;cursor:pointer}.submit:hover{background:var(--yellow);color:var(--black)}.privacy{max-width:680px;color:var(--muted);font-size:11px;line-height:1.45}.status{min-height:22px;margin:14px 0 0;font-size:13px}.status.error{color:#9d1a14}.status.success{color:#28613b}
+    .reader-thoughts{border-top:2px solid var(--black);padding:36px 24px 46px}.thought-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:24px}.thought-head h4{margin:0;font:900 clamp(30px,3vw,48px)/1 var(--display)}.comment-count{font:700 11px/1 var(--mono)}.thought-section{margin-top:32px}.thought-section h5{font:900 20px/1 var(--display);margin:0 0 14px}.comment-list{display:grid;gap:12px}.comment-card{border:1px solid var(--line);padding:18px;background:var(--cream)}.comment-meta{display:flex;justify-content:space-between;gap:16px;font-size:12px}.comment-meta time{color:var(--muted)}.comment-context{display:inline-block;margin-top:9px;background:var(--yellow);padding:5px 8px;font:700 10px/1 var(--mono)}.comment-body{margin-top:15px;font-size:16px;line-height:1.55;white-space:pre-wrap}.comment-actions{display:flex;gap:8px;margin-top:15px}.comment-actions button{border:1px solid var(--line);background:transparent;padding:7px 10px;cursor:pointer}.comment-actions button:hover{background:var(--yellow)}.empty-comments{color:var(--muted);font:italic 16px/1.5 var(--serif)}.older{margin-top:18px;border:1px solid var(--black);background:transparent;padding:11px 16px;cursor:pointer}.older:hover{background:var(--black);color:var(--white)}
+    .footer{background:var(--black);color:var(--white);padding:82px 24px 30px;text-align:center}.footer-title{font:900 clamp(70px,10vw,160px)/.78 var(--display);letter-spacing:-.07em}.footer-title em{color:var(--yellow);font:italic 400 1em/1 var(--serif)}.footer-sub{margin:30px auto 40px;max-width:700px;font:italic 18px/1.45 var(--serif);color:#ddd7c9}.connect-label{color:var(--yellow);font:700 11px/1 var(--mono);letter-spacing:.18em}.footer-links{display:flex;justify-content:center;flex-wrap:wrap;gap:16px;margin:20px 0 48px}.footer-links a,.footer-links button{border:2px solid #5f5c54;border-radius:99px;background:transparent;color:var(--white);padding:13px 24px;text-decoration:none;font-weight:700;cursor:pointer}.footer-links a:hover,.footer-links button:hover{border-color:var(--yellow);color:var(--yellow)}.copyright{color:#7f7b71;font:400 11px/1.7 var(--mono)}
+    .toast{position:fixed;right:22px;bottom:22px;z-index:300;background:var(--black);color:var(--yellow);padding:13px 18px;border:1px solid var(--yellow);opacity:0;transform:translateY(10px);pointer-events:none;transition:.2s}.toast.show{opacity:1;transform:none}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+    @media(max-width:1100px){.toc-grid{grid-template-columns:repeat(2,1fr)}.story{grid-template-columns:1fr;gap:42px}.story.reverse .story-copy,.story.reverse .story-visual{order:initial}.story-visual{min-height:600px}.escape-layout{grid-template-columns:1fr}.room-scene{border-right:0;border-bottom:1px solid #333}.reaction-grid{grid-template-columns:repeat(2,1fr)}.reaction:last-child{grid-column:1/-1}}
+    @media(max-width:700px){.topbar{grid-template-columns:1fr auto;height:58px}.top-meta{display:none}.hero{min-height:760px}.hero h1{margin-top:68px}.hero-number{right:-50px;top:170px}.toc-grid{grid-template-columns:1fr}.story{padding:64px 18px;min-height:auto}.story-visual{min-height:520px}.escape-shell{min-height:0}.escape-layout{grid-template-columns:1fr}.room-scene{min-height:570px;border-right:0;border-bottom:1px solid #333}.escape-console{padding:22px}.reading-rail{display:none}.reaction-grid{grid-template-columns:1fr}.reaction:last-child{grid-column:auto}.form-row{grid-template-columns:1fr}.field.full{grid-column:auto}.submit-row{align-items:flex-start;flex-direction:column}.footer-title{font-size:76px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
   </style>
 </head>
 <body>
-<div class="shell" id="top">
-  <header class="topbar"><a class="brand" href="#top">1% Progress</a><div class="edition-meta">Edition 077 · Wed · Jul 29 · 2026</div><a class="top-link" href="#issue">In this issue</a></header>
-  <main>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="reading-progress" aria-hidden="true"><span id="reading-progress"></span></div>
+<div class="page" id="top">
+  <nav class="reading-rail" aria-label="Reading progress"><a href="#story-1" data-rail="story-1">01</a><a href="#story-2" data-rail="story-2">02</a><a href="#story-3" data-rail="story-3">03</a><a class="game-dot" href="#story-4" data-rail="story-4" aria-label="Article 4 game">🎮</a><a href="#story-5" data-rail="story-5">05</a><a href="#community" data-rail="community" aria-label="Reader comments">💬</a></nav>
+  <header class="topbar">
+    <a class="brand" href="#top">1% Progress</a>
+    <div class="top-meta">Edition 078 &nbsp; Mon · Aug 10 · 2026</div>
+    <div class="top-actions"><a href="https://edition77onepercent.netlify.app/">Archive</a><button type="button" data-share>Share</button></div>
+  </header>
+
+  <main id="main">
     <section class="hero">
-      <div class="kicker">No. 077 · Weekly · 6 min read · Change Labs</div>
-      <h1><span>Small</span><span><em>moves.</em></span></h1>
-      <div class="hero-grid"><div class="kicker">The edition about momentum</div><div class="hero-note">Five notes on starting before certainty, protecting your attention, making recovery visible, building taste, and choosing a <strong>minimum brave move.</strong></div></div>
-      <div class="progress"><span>77 weeks · 1% better each</span><span>Direction before speed.</span></div>
+      <div class="hero-meta">No. 078 &nbsp; · &nbsp; Weekly &nbsp; · &nbsp; 8 min read &nbsp; · &nbsp; By Ajith J · Change Labs</div>
+      <div class="hero-number" aria-hidden="true">78</div>
+      <h1><span>1%</span><span>Progress.</span></h1>
+      <p class="hero-dek">Five stories on pausing before reacting, asking better questions, designing your week, questioning assumptions, escaping the editorial room, and changing your mind without losing yourself.</p>
+      <div class="hero-streak">78 weeks · 1% better each<br><strong>Compounding, quietly.</strong></div>
+      <div class="bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
     </section>
 
-    <nav class="toc" id="issue"><p class="section-label">— In this issue</p>
-      <a href="#story1"><small>No. 01</small><strong>The Minimum Brave Move</strong><i>→</i></a>
-      <a href="#story2"><small>No. 02</small><strong>Attention Has a Door</strong><i>→</i></a>
-      <a href="#story3"><small>No. 03</small><strong>Make Recovery Visible</strong><i>→</i></a>
-      <a href="#story4"><small>No. 04</small><strong>Taste Is a Muscle</strong><i>→</i></a>
-      <a href="#story5"><small>No. 05</small><strong>A Quote for Uncertain Weeks</strong><i>→</i></a>
+    <nav class="toc" aria-label="In this issue">
+      <div class="toc-label">— IN THIS ISSUE</div>
+      <div class="toc-grid">
+        <a href="#story-1"><small>No. 01</small><strong>The Useful Pause</strong></a>
+        <a href="#story-2"><small>No. 02</small><strong>Questions AI Cannot Answer</strong></a>
+        <a href="#story-3"><small>No. 03</small><strong>Design the Week Before It Designs You</strong></a>
+        <a href="#story-4"><small>No. 04 · GAME</small><strong>Escape the Editorial Room</strong></a>
+        <a href="#story-5"><small>No. 05</small><strong>The Strength to Revise</strong></a>
+      </div>
     </nav>
 
-    <article class="story" id="story1">
-      <div class="story-head"><div class="story-no">01</div><div><div class="story-type">Field Note</div><h2>The minimum brave move.</h2><p class="dek">When the full leap feels impossible, reduce the size of the action — not the honesty of it.</p></div></div>
-      <div class="body-grid">
-        <div><div class="visual" aria-label="Abstract editorial image of a person crossing a bright threshold"><svg viewBox="0 0 700 760" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1d2f27"/><stop offset=".55" stop-color="#55735e"/><stop offset="1" stop-color="#e5b37d"/></linearGradient><filter id="n"><feTurbulence baseFrequency=".75" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 .12"/></feComponentTransfer></filter></defs><rect width="700" height="760" fill="url(#g1)"/><path d="M430 0h270v760H350z" fill="#f2e7cf" opacity=".9"/><circle cx="358" cy="410" r="32" fill="#151512"/><path d="M328 444l63-4 34 150-106 0z" fill="#151512"/><path d="M344 585l-40 154M395 585l45 154" stroke="#151512" stroke-width="20"/><rect width="700" height="760" filter="url(#n)" opacity=".35"/></svg></div><div class="caption">Study 01 · Threshold / generated editorial artwork</div></div>
-        <div class="body-copy"><p class="drop">Big decisions are often presented as clean cinematic moments: resign, launch, confess, begin. Real courage is usually less dramatic. It is the email draft you finally name. The calendar block you defend. The first honest sentence in a difficult conversation.</p><p>The useful question is not “What would the boldest person do?” It is “What is the smallest action that would still count as brave?” Small enough to do today. Honest enough to change tomorrow.</p><div class="principles"><div class="principle"><div><strong>Name the avoided thing.</strong><p>Ambiguity protects fear. Give the decision a plain, unflattering name.</p></div></div><div class="principle"><div><strong>Shrink the exposure.</strong><p>Try the move with one customer, one page, one conversation or one hour.</p></div></div><div class="principle"><div><strong>Leave evidence.</strong><p>Bravery compounds when your future self can see that you began.</p></div></div></div></div>
-      </div><div class="story-foot"><span>Practice · 3 minutes</span><a href="#story2">Next story →</a></div>
-    </article>
-
-    <article class="story" id="story2">
-      <div class="story-head"><div class="story-no">02</div><div><div class="story-type">Attention</div><h2>Attention has a door.</h2><p class="dek">Most distraction is not a discipline problem. It is an architecture problem.</p></div></div>
-      <div class="body-grid"><div class="body-copy"><p class="drop">Every open tab is a small invitation. Every notification is a knock. Every “quick check” leaves the door ajar for ten more minutes.</p><p>The common response is to demand more willpower. A kinder response is to change the room. Put the phone outside reach. Make one browser profile for focus. Start meetings with the document already open. Friction is not always the enemy; sometimes it is the lock.</p><p>Design the first ten seconds of the behaviour you want. The rest often follows.</p></div><div><div class="visual"><svg viewBox="0 0 760 650" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="g2" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#c16d45"/><stop offset=".48" stop-color="#e9cba6"/><stop offset="1" stop-color="#668a91"/></linearGradient><filter id="n2"><feTurbulence baseFrequency=".55" numOctaves="4"/><feComponentTransfer><feFuncA type="table" tableValues="0 .1"/></feComponentTransfer></filter></defs><rect width="760" height="650" fill="url(#g2)"/><rect x="80" y="80" width="300" height="490" fill="#20231f"/><rect x="115" y="115" width="230" height="420" fill="#f0e8d8"/><rect x="440" y="175" width="220" height="300" rx="110" fill="#304a43" opacity=".9"/><circle cx="550" cy="325" r="42" fill="#f4cc78"/><rect width="760" height="650" filter="url(#n2)"/></svg></div><div class="caption">Study 02 · Door / generated editorial artwork</div></div></div>
-      <div class="story-foot"><span>Experiment · One distraction removed</span><a href="#story3">Next story →</a></div>
-    </article>
-
-    <article class="story" id="story3">
-      <div class="story-head"><div class="story-no">03</div><div><div class="story-type">Team Practice</div><h2>Make recovery visible.</h2><p class="dek">Teams celebrate launches. Strong teams also show how they repair, reset and return.</p></div></div>
-      <div class="body-grid"><div><div class="visual"><svg viewBox="0 0 700 760" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="g3" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d9ded6"/><stop offset=".5" stop-color="#7e9b8a"/><stop offset="1" stop-color="#1d3028"/></linearGradient><filter id="n3"><feTurbulence baseFrequency=".8" numOctaves="2"/><feComponentTransfer><feFuncA type="table" tableValues="0 .13"/></feComponentTransfer></filter></defs><rect width="700" height="760" fill="url(#g3)"/><path d="M0 560C110 500 200 620 310 550s215-90 390 10v200H0z" fill="#e6c27d"/><path d="M0 595c120-75 210 35 330-30s220-80 370 20" fill="none" stroke="#f4ece0" stroke-width="18"/><path d="M0 640c120-75 210 35 330-30s220-80 370 20" fill="none" stroke="#f4ece0" stroke-width="8" opacity=".7"/><circle cx="525" cy="210" r="85" fill="#ee7b4f"/><rect width="700" height="760" filter="url(#n3)"/></svg></div><div class="caption">Study 03 · Return / generated editorial artwork</div></div><div class="body-copy"><p class="drop">A missed target is visible. Recovery is often hidden: the rewritten plan, the awkward apology, the quiet hour spent making sense of what failed.</p><p>That invisibility teaches the wrong lesson. It makes competence look like a life without wobble. In reality, durable teams wobble and correct.</p><div class="principles"><div class="principle"><div><strong>Say what changed.</strong><p>Not just what went wrong — what you now understand differently.</p></div></div><div class="principle"><div><strong>Publish the reset.</strong><p>A new plan becomes believable when people can see its first checkpoint.</p></div></div><div class="principle"><div><strong>Close the emotional loop.</strong><p>“We are disappointed” and “we are moving” can both be true.</p></div></div></div></div></div>
-      <div class="story-foot"><span>Leadership · Repair is work</span><a href="#story4">Next story →</a></div>
-    </article>
-
-    <article class="story" id="story4">
-      <div class="story-head"><div class="story-no">04</div><div><div class="story-type">Craft</div><h2>Taste is a muscle.</h2><p class="dek">You improve judgment by collecting distinctions, not just inspiration.</p></div></div>
-      <div class="body-grid"><div class="body-copy"><p class="drop">Saving beautiful work is easy. Explaining why it works is where taste begins.</p><p>When something feels excellent, pause before copying it. Ask which decision created the feeling: the ruthless edit, the unexpected scale, the quiet colour, the sentence that arrived half a beat late.</p><p>Build a “because” library, not a mood board. One clear observation a day gives your future work a sharper vocabulary.</p></div><div class="principles"><div class="principle"><div><strong>Collect one example.</strong><p>A page, product, meeting, phrase or interaction worth remembering.</p></div></div><div class="principle"><div><strong>Write one because.</strong><p>“This works because…” forces instinct into a reusable principle.</p></div></div><div class="principle"><div><strong>Test one distinction.</strong><p>Apply the principle somewhere small before you decide it is true.</p></div></div></div></div>
-      <div class="story-foot"><span>Daily ritual · 5 minutes</span><a href="#story5">Next story →</a></div>
-    </article>
-
-    <article class="story" id="story5">
-      <div class="story-head"><div class="story-no">05</div><div><div class="story-type">A Quote Worth Keeping</div><h2>For uncertain weeks.</h2><p class="dek">A line about moving without pretending to know the whole route.</p></div></div>
-      <div class="quote"><div class="quote-mark">“</div><blockquote>You do not need a complete map. You need a direction honest enough for the next step.</blockquote><cite>— Edition 077</cite></div>
-      <div class="body-grid"><div class="kicker">The note behind the line</div><div class="body-copy"><p>Certainty is a luxury most meaningful work cannot offer at the beginning. Waiting for it can look responsible while quietly becoming avoidance.</p><p>A direction is different. It can be revised. It can survive new information. It asks only that the next move makes the work more truthful, more useful or more alive.</p></div></div>
-      <div class="story-foot"><span>Keep · Share · Revisit</span><a href="#top">Back to top ↑</a></div>
-    </article>
-
-    <section class="manifesto"><div class="panel"><div class="section-label">Change Labs</div><h3>Small experiments.<br/>Stacked weekly.</h3><p>On work, leadership, growth, and the quiet choices that shape how we show up.</p></div><div class="panel"><div class="big-77">77</div><p><strong>This week’s pattern:</strong> courage can be made smaller, attention can be designed, recovery deserves daylight, taste needs language, and direction is enough to begin.</p></div></section>
-
-    <section class="community" id="community" aria-labelledby="community-title"><div class="community-wrap">
-      <div class="section-label">— Community response</div><h3 id="community-title">How did this land?</h3>
-      <p class="community-intro">Reactions and comments are public. A random visitor identifier is stored in a first-party cookie to reduce duplicate votes. Network information is converted into a one-way hash by the server and is not displayed.</p>
-      <div id="community-status" class="community-status" role="status" aria-live="polite">Loading community responses…</div>
-      <div class="reaction-grid" aria-label="Newsletter reactions">
-        <button class="reaction-choice" data-reaction="loved" aria-pressed="false"><span>❤️ Loved</span><strong data-count="loved">0</strong></button>
-        <button class="reaction-choice" data-reaction="useful" aria-pressed="false"><span>👍 Useful</span><strong data-count="useful">0</strong></button>
-        <button class="reaction-choice" data-reaction="insightful" aria-pressed="false"><span>💡 Insightful</span><strong data-count="insightful">0</strong></button>
-        <button class="reaction-choice" data-reaction="resonated" aria-pressed="false"><span>🙌 Resonated</span><strong data-count="resonated">0</strong></button>
+    <article class="story reveal" id="story-1">
+      <div class="story-copy">
+        <div class="story-no">01</div><div class="story-type">THE PRACTICE</div>
+        <h2>The useful <em>pause.</em></h2>
+        <p class="dek">Most regrettable replies are written in the first thirty seconds.</p>
+        <p>There is a small distance between what happens and what we do next. On a good day, we notice it. On a difficult day, we fill it immediately—with a reply, a judgement, a defence, a decision.</p>
+        <p>The pause is not passivity. It is the moment where impulse becomes choice. Even ninety seconds can change the quality of a conversation: read the message once, stand up, breathe, ask what outcome you actually want, then return.</p>
+        <p>A useful rule: when the emotion is loud, make the next move small. Draft the reply. Do not send it. Ask one clarifying question. Sleep on the decision that is trying to become permanent too quickly.</p>
+        <p>The best response is rarely the fastest one. It is the one you can still stand behind tomorrow.</p>
+        <div class="story-foot"><span>3 min read</span><a href="#story-2">Next story →</a></div>
       </div>
-      <div class="newsletter-votes" aria-label="Overall newsletter vote"><span>Overall:</span><button class="vote-button" data-newsletter-vote="1">👍 <span id="newsletter-likes">0</span></button><button class="vote-button" data-newsletter-vote="-1">👎 <span id="newsletter-dislikes">0</span></button><button class="vote-button" id="copy">↗ Share</button></div>
-      <form class="comment-form" id="comment-form">
-        <div class="form-row"><div><label for="display-name">Display name (optional)</label><input id="display-name" name="displayName" maxlength="40" autocomplete="nickname" placeholder="Anonymous"></div><div><label for="article-id">Comment about</label><select id="article-id" name="articleId"><option value="">Entire newsletter</option><option value="story1">01 · The Minimum Brave Move</option><option value="story2">02 · Attention Has a Door</option><option value="story3">03 · Make Recovery Visible</option><option value="story4">04 · Taste Is a Muscle</option><option value="story5">05 · A Quote for Uncertain Weeks</option></select></div></div>
-        <div><label for="comment-body">Public comment</label><textarea id="comment-body" name="body" minlength="2" maxlength="1200" required placeholder="Add to the conversation…"></textarea></div>
-        <div class="honeypot" aria-hidden="true"><label for="website">Website</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
-        <button class="comment-submit" type="submit">Publish comment</button>
-      </form>
-      <div class="comments-head"><h4>Reader comments</h4><span id="comment-count">0 comments</span></div>
-      <div id="comment-list" class="comment-list" aria-live="polite"></div>
-    </div></section>
+      <figure class="story-visual" aria-label="Editorial still life of a notebook, timer and coffee representing a thoughtful pause">
+        <div class="editorial-image">
+          <svg viewBox="0 0 800 760" role="img" aria-label="Notebook, pencil, coffee and a ninety-second timer on a warm editorial desk">
+            <defs><linearGradient id="desk" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#31271d"/><stop offset="1" stop-color="#100d0a"/></linearGradient><filter id="soft"><feDropShadow dx="0" dy="20" stdDeviation="18" flood-opacity=".38"/></filter></defs>
+            <rect width="800" height="760" fill="url(#desk)"/><circle cx="650" cy="95" r="240" fill="#ffd400" opacity=".12"/><path d="M0 590L800 490V760H0Z" fill="#211a13"/>
+            <g filter="url(#soft)" transform="rotate(-5 365 370)"><rect x="155" y="150" width="430" height="470" rx="6" fill="#f6f1e5"/><rect x="155" y="150" width="42" height="470" fill="#ffd400"/><line x1="230" y1="255" x2="530" y2="255" stroke="#c7bfae" stroke-width="2"/><line x1="230" y1="310" x2="505" y2="310" stroke="#c7bfae" stroke-width="2"/><line x1="230" y1="365" x2="520" y2="365" stroke="#c7bfae" stroke-width="2"/><text x="230" y="215" fill="#111" font-family="Arial Black,Arial" font-size="38">THE USEFUL</text><text x="230" y="565" fill="#111" font-family="Georgia" font-style="italic" font-size="48">pause.</text></g>
+            <g filter="url(#soft)"><circle cx="650" cy="500" r="90" fill="#e8dfc8"/><circle cx="650" cy="500" r="65" fill="#3b2416"/><path d="M718 475c90-12 91 78 12 80" fill="none" stroke="#e8dfc8" stroke-width="24"/></g>
+            <g transform="translate(72 90) rotate(12)"><rect width="28" height="370" rx="10" fill="#e8b62f"/><polygon points="0,370 28,370 14,405" fill="#d5c29c"/></g>
+            <g transform="translate(615 160)" filter="url(#soft)"><circle r="82" fill="#0b0b0b" stroke="#ffd400" stroke-width="7"/><text text-anchor="middle" y="-4" fill="#ffd400" font-family="Arial Black,Arial" font-size="36">90</text><text text-anchor="middle" y="28" fill="#fff" font-family="Courier New" font-size="13">SECONDS</text><path d="M0-58V-18" stroke="#ffd400" stroke-width="5"/></g>
+          </svg>
+        </div><figcaption class="image-caption"><span>Practice · response design</span><span>Make the next move small</span></figcaption>
+      </figure>
+    </article>
+
+    <article class="story reverse reveal" id="story-2">
+      <div class="story-copy">
+        <div class="story-no">02</div><div class="story-type">THINKING WITH TOOLS</div>
+        <h2>Questions AI cannot <em>answer.</em></h2>
+        <p class="dek">A tool can generate options. It cannot decide what should matter to you.</p>
+        <p>AI is remarkably good at making the blank page disappear. It can summarise, compare, draft and organise. But the hardest part of many decisions is not producing an answer. It is deciding which question deserves to be asked.</p>
+        <p>What trade-off are we willing to accept? Who carries the downside? What will still matter when the excitement wears off? Which choice fits the person—or organisation—we are trying to become?</p>
+        <p>Those are not information problems. They are judgement problems. A system can help us see more angles, but it cannot inherit responsibility for the direction we choose.</p>
+        <p>Use AI to widen the map. Keep the compass.</p>
+        <div class="story-foot"><span>2 min read</span><a href="#story-3">Next story →</a></div>
+      </div>
+      <a class="story-visual video-visual" href="https://www.ted.com/talks" target="_blank" rel="noopener" aria-label="Open a related collection of TED talks in a new tab">
+        <div class="editorial-image">
+          <svg viewBox="0 0 800 760" role="img" aria-label="Editorial portrait and interface representing human judgement alongside artificial intelligence">
+            <defs><linearGradient id="aiBg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b0b0b"/><stop offset="1" stop-color="#28323a"/></linearGradient><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.8" fill="#ffd400" opacity=".32"/></pattern></defs>
+            <rect width="800" height="760" fill="url(#aiBg)"/><rect width="800" height="760" fill="url(#dots)"/>
+            <path d="M140 650C165 465 230 315 390 245C505 195 631 230 708 330V760H95Z" fill="#111" stroke="#ffd400" stroke-width="3"/>
+            <circle cx="415" cy="235" r="130" fill="#d9c3ab"/><path d="M298 240c10-160 220-190 275-35-58-48-154-53-275 35Z" fill="#111"/><path d="M457 216c72 20 129 88 152 184" fill="none" stroke="#ffd400" stroke-width="5" stroke-dasharray="12 12"/>
+            <g fill="none" stroke="#ffd400" stroke-width="3"><circle cx="602" cy="398" r="46"/><circle cx="602" cy="398" r="86" opacity=".55"/><circle cx="602" cy="398" r="130" opacity=".22"/></g><circle cx="602" cy="398" r="8" fill="#ffd400"/>
+            <text x="52" y="74" fill="#ffd400" font-family="Courier New" font-size="16">HUMAN JUDGEMENT / 078</text><text x="52" y="710" fill="#fff" font-family="Georgia" font-style="italic" font-size="42">Use the map. Keep the compass.</text>
+          </svg>
+        </div><span class="video-meta">RELATED WATCH · EXTERNAL</span><span class="video-play" aria-hidden="true">▶</span><span class="image-caption"><span>Thinking with tools</span><span>Open TED collection ↗</span></span>
+      </a>
+    </article>
+
+    <article class="story reveal" id="story-3">
+      <div class="story-copy">
+        <div class="story-no">03</div><div class="story-type">WORKING RHYTHM</div>
+        <h2>Design the week before it <em>designs you.</em></h2>
+        <p class="dek">A calendar is not just a record of commitments. It is a statement of priorities.</p>
+        <p>Most weeks do not collapse because we lacked effort. They collapse because every open space quietly became available to someone else.</p>
+        <p>Try a fifteen-minute weekly reset. Before Monday begins, decide where the week needs depth, where it needs movement, and where it needs recovery. Then protect those choices before the requests arrive.</p>
+        <p>The goal is not to control every hour. It is to make sure your most important work does not have to survive on whatever energy remains.</p>
+        <div class="story-foot"><span>Weekly practice</span><a href="#story-4">Next story →</a></div>
+      </div>
+      <div class="story-visual week-card" aria-label="Four-part weekly planning framework">
+        <h3>A week with an intention.</h3>
+        <div class="week-list">
+          <div class="week-item"><div><strong>One outcome.</strong><p>The result that would make the week meaningful.</p></div></div>
+          <div class="week-item"><div><strong>Two deep-work blocks.</strong><p>Protected before meetings consume the calendar.</p></div></div>
+          <div class="week-item"><div><strong>One difficult conversation.</strong><p>Handled before avoidance makes it heavier.</p></div></div>
+          <div class="week-item"><div><strong>One recovery block.</strong><p>Because tired thinking creates expensive work.</p></div></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="story reverse reveal" id="story-4">
+      <div class="story-copy">
+        <div class="story-no">04</div><div class="story-type">A CRITICAL-THINKING ESCAPE ROOM</div>
+        <h2>The editorial <em>room.</em></h2>
+        <p class="dek">Ajith left today’s final page locked inside a drawer. The obvious clues are mostly distractions.</p>
+        <p>You arrive before the editorial meeting. On the desk is a locked drawer. Inside it is the line that completes this edition.</p>
+        <p>The room contains a stopped clock, an upside-down book, a framed reminder, a plant, a lamp, a door—and one object almost everyone treats as background.</p>
+        <p>Inspect the room. Keep useful evidence. Question what appears fixed. The answer is not where everyone looks.</p>
+        <p>This is not a speed test. It is a test of assumptions. Everything happens inside the article; no new page opens.</p>
+        <div class="story-foot"><span>Interactive · 2–4 min</span><a href="#story-5">Next story →</a></div>
+      </div>
+      <section class="escape-shell" aria-labelledby="escape-title">
+        <div class="escape-top"><span>MICRO ESCAPE ROOM · STAY ON THIS PAGE</span><span id="escape-progress">0 / 3 ESSENTIAL STEPS</span></div>
+        <div class="escape-layout">
+          <div class="room-scene" id="room-scene" aria-label="Interactive editorial room. Select objects to inspect them.">
+            <button class="room-object door-object" type="button" data-object="door" aria-label="Inspect the door"></button>
+            <button class="room-object window-object" type="button" data-object="window" aria-label="Inspect the window"></button>
+            <button class="room-object clock-object" type="button" data-object="clock" aria-label="Inspect the stopped clock">3:17</button>
+            <button class="room-object desk-object" id="drawer" type="button" data-object="drawer" aria-label="Inspect the locked desk drawer"></button>
+            <button class="room-object lamp-object" type="button" data-object="lamp" aria-label="Inspect the lamp"></button>
+            <button class="room-object plant-object" type="button" data-object="plant" aria-label="Inspect the plant"></button>
+            <button class="room-object books-object" type="button" data-object="books" aria-label="Inspect the books"></button>
+            <button class="room-object frame-object" type="button" data-object="frame" aria-label="Inspect the picture frame"></button>
+            <button class="room-object rug-object" id="rug" type="button" data-object="rug" aria-label="Inspect or move the rug"><span class="rug-label">THE RUG</span></button>
+            <span class="hidden-key" id="hidden-key" aria-hidden="true">🗝️</span>
+            <div class="escape-complete" id="escape-complete" aria-hidden="true"><div class="escape-complete-inner"><div class="unlock">DRAWER UNLOCKED · HIDDEN PAGE FOUND</div><h5>You escaped the obvious.</h5><blockquote>“Critical thinking is not finding more clues. It is questioning the frame that tells you where a clue is allowed to be.”</blockquote><p>The rug was visible from the beginning. The assumption that it was decoration made it invisible.</p><button type="button" id="play-again">Play again</button></div></div>
+          </div>
+          <aside class="escape-console">
+            <div><h4 id="escape-title">Find the missing page.</h4><p class="mission">Mission: unlock the desk drawer. The clue says, “The answer isn’t where everyone looks.”</p><div class="inventory"><div class="inventory-title">INVENTORY</div><div class="inventory-items"><span class="inventory-item" id="inv-time">3:17</span><span class="inventory-item" id="inv-word">WORD</span><span class="inventory-item" id="inv-key">KEY</span></div></div><ul class="clue-log" id="clue-log"><li>The room is waiting. Select any object to inspect it.</li></ul><div class="escape-status" id="escape-status" role="status" aria-live="polite">Look around. Not every interesting object is useful—and not every ordinary object is irrelevant.</div></div>
+            <div class="escape-actions"><button type="button" id="escape-hint">Hint</button><button type="button" id="escape-reset">Reset room</button></div>
+          </aside>
+        </div>
+      </section>
+    </article>
+
+    <article class="story reveal" id="story-5">
+      <div class="story-copy">
+        <div class="story-no">05</div><div class="story-type">A THOUGHT TO KEEP</div>
+        <h2>The strength to <em>revise.</em></h2>
+        <p class="dek">Changing your mind is not proof that your old thinking was worthless.</p>
+        <p>We often defend a position long after the evidence has moved—not because the position is still useful, but because it has become attached to our identity.</p>
+        <p>A better question than “Was I wrong?” is “What can I see now that I could not see then?” That turns revision from an admission of failure into evidence of learning.</p>
+        <p>Strong convictions are useful. Stronger still is the ability to update them without treating every change as a loss of face.</p>
+        <p>You do not need to become less decisive. You need to become less trapped by yesterday’s decision.</p>
+        <div class="story-foot"><span>2 min read</span><a href="#top">Back to top ↑</a></div>
+      </div>
+      <div class="story-visual belief-poster" aria-label="Quote on changing your mind"><div class="stamp">REVISION ≠ DEFEAT</div><blockquote>“A mind that can update is not weak. It is awake.”</blockquote><small>— A THOUGHT I KEEP COMING BACK TO</small></div>
+    </article>
+
+    <section class="change-labs reveal">
+      <h3>Change <em>Labs</em></h3>
+      <p class="tagline">Small experiments. Stacked weekly. On work, leadership, growth, and the quiet stuff in between.</p>
+      <div class="byline">Ajith J &nbsp; · &nbsp; Bengaluru &nbsp; · &nbsp; 2026</div>
+      <p class="pattern">This week’s pattern: pause before reacting, keep judgement human, protect what matters before the week fills up, look for information outside the obvious frame, and treat revision as a form of strength.</p>
+    </section>
+
+    <section class="community" id="community">
+      <div class="community-card">
+        <div class="community-head"><div class="eyebrow">— TAP ONE</div><h3>How did this <em>land?</em></h3><p class="community-intro">Your response becomes part of the shared Edition 078 reader view.</p></div>
+        <div class="reaction-grid" aria-label="React to Edition 078">
+          <button class="reaction" type="button" data-reaction="loved" aria-pressed="false"><span class="reaction-icon">❤️</span><span class="reaction-label">Loved</span><span class="reaction-count">0</span><span class="reaction-feedback">Thank you</span></button>
+          <button class="reaction" type="button" data-reaction="useful" aria-pressed="false"><span class="reaction-icon">👍</span><span class="reaction-label">Useful</span><span class="reaction-count">0</span><span class="reaction-feedback">Glad it helped</span></button>
+          <button class="reaction" type="button" data-reaction="insightful" aria-pressed="false"><span class="reaction-icon">💡</span><span class="reaction-label">Insightful</span><span class="reaction-count">0</span><span class="reaction-feedback">A new perspective</span></button>
+          <button class="reaction" type="button" data-reaction="resonated" aria-pressed="false"><span class="reaction-icon">🙌</span><span class="reaction-label">Resonated</span><span class="reaction-count">0</span><span class="reaction-feedback">This connected</span></button>
+          <button class="reaction" type="button" data-reaction="taking_action" aria-pressed="false"><span class="reaction-icon">🚀</span><span class="reaction-label">I’m Taking Action</span><span class="reaction-count">0</span><span class="reaction-feedback">Your next 1%</span></button>
+        </div>
+        <div class="overall"><span class="overall-label">Overall:</span><button type="button" data-newsletter-vote="1">👍 <span id="newsletter-likes">0</span></button><button type="button" data-newsletter-vote="-1">👎 <span id="newsletter-dislikes">0</span></button><button type="button" data-share>↗ Share</button></div>
+        <form class="comment-form" id="comment-form">
+          <h4 class="prompt">What idea from this week’s edition stayed with you?</h4><p class="prompt-sub">Share one thought, one lesson, or one action you’re taking.</p>
+          <div class="form-row">
+            <div class="field"><label for="display-name">Name (optional)</label><input id="display-name" name="displayName" maxlength="40" autocomplete="name" placeholder="Anonymous"></div>
+            <div class="field"><label for="article-id">Comment about</label><select id="article-id" name="articleId"><option value="">Entire newsletter</option><option value="story1">01 · The Useful Pause</option><option value="story2">02 · Questions AI Cannot Answer</option><option value="story3">03 · Design the Week</option><option value="story4">04 · The Editorial Room</option><option value="story5">05 · The Strength to Revise</option></select></div>
+            <div class="field full"><label for="comment-body">Your thoughts</label><textarea id="comment-body" name="body" maxlength="1200" required placeholder="What stayed with you?"></textarea></div>
+            <div class="sr-only" aria-hidden="true"><label for="website">Website</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
+          </div>
+          <div class="submit-row"><button class="submit" type="submit">Share Your Thought</button><div class="privacy">Comments are public. A first-party anonymous identifier and a one-way network hash help limit duplicate reactions and spam. Raw IP addresses are not stored by this application.</div></div>
+          <div class="status" id="community-status" role="status" aria-live="polite">Loading community responses…</div>
+        </form>
+        <div class="reader-thoughts"><div class="thought-head"><h4>Reader Thoughts</h4><span class="comment-count" id="comment-count">0 comments</span></div><section class="thought-section"><h5>⭐ Most Helpful</h5><div class="comment-list" id="helpful-list"></div></section><section class="thought-section"><h5>💬 Latest Conversations</h5><div class="comment-list" id="latest-list"></div><button class="older" type="button" id="older-comments" hidden>View older comments</button></section></div>
+      </div>
+      <p id="reaction-status" class="sr-only" role="status" aria-live="polite"></p>
+    </section>
   </main>
-  <footer><div class="signoff">Until next<br/>Monday.</div><div class="footer-grid"><div>1% Progress · Edition 077<br/>Made with curiosity in Bengaluru</div><div>© 2026 · Change Labs<br/>Direction before speed.</div></div></footer>
-</div><div class="toast" id="toast">Link copied</div>
+
+  <footer class="footer">
+    <div class="footer-title">Until <em>next</em><br>Monday.</div>
+    <p class="footer-sub">If something here was useful, forward it to one person. That is how this grows.</p>
+    <div class="connect-label">— CONNECT</div>
+    <div class="footer-links"><a href="mailto:Ajith.Johnson@cba.com.au?subject=1%25%20Progress%20Edition%20078">Email Ajith</a><a href="https://edition77onepercent.netlify.app/">Read Edition 077</a><button type="button" data-share>Share this issue</button></div>
+    <div class="copyright">© 2026 · 1% Progress · Change Labs · By Ajith J<br>Made in Bengaluru</div>
+  </footer>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite">Link copied</div>
 <script>
 (() => {
-  const API = { load: '/api/interactions', comments: '/api/comments', reactions: '/api/reactions', votes: '/api/votes' };
-  const statusEl = document.getElementById('community-status');
-  const listEl = document.getElementById('comment-list');
-  const form = document.getElementById('comment-form');
-  const startedAt = Date.now();
-
-  function getCookie(name) {
-    return document.cookie.split('; ').find(row => row.startsWith(name + '='))?.split('=')[1] || '';
-  }
-  function visitorId() {
-    let id = getCookie('newsletter_visitor');
-    if (!/^[0-9a-f-]{36}$/i.test(id)) {
-      id = crypto.randomUUID();
-      document.cookie = 'newsletter_visitor=' + id + '; Max-Age=31536000; Path=/; SameSite=Lax; Secure';
-    }
-    return id;
-  }
-  function setStatus(message, type = '') {
-    statusEl.textContent = message;
-    statusEl.className = 'community-status' + (type ? ' ' + type : '');
-  }
-  async function request(url, options = {}) {
-    const response = await fetch(url, { headers: { 'content-type': 'application/json', ...(options.headers || {}) }, ...options });
-    const data = await response.json().catch(() => ({}));
-    if (!response.ok) throw new Error(data.error || 'Request failed.');
-    return data;
-  }
-  function updateReactionCounts(totals) {
-    for (const [key, value] of Object.entries(totals || {})) {
-      const node = document.querySelector('[data-count="' + key + '"]');
-      if (node) node.textContent = value;
-    }
-  }
-  function formatDate(value) {
-    return new Intl.DateTimeFormat(undefined, { dateStyle: 'medium', timeStyle: 'short' }).format(new Date(value));
-  }
-  function renderComments(comments) {
-    listEl.replaceChildren();
-    document.getElementById('comment-count').textContent = comments.length + (comments.length === 1 ? ' comment' : ' comments');
-    if (!comments.length) {
-      const empty = document.createElement('p'); empty.className = 'empty-comments'; empty.textContent = 'No comments yet. Start the conversation.'; listEl.append(empty); return;
-    }
-    for (const comment of comments) {
-      const card = document.createElement('article'); card.className = 'comment-card';
-      const meta = document.createElement('div'); meta.className = 'comment-meta';
-      const author = document.createElement('strong'); author.textContent = comment.display_name;
-      const time = document.createElement('time'); time.dateTime = comment.created_at; time.textContent = formatDate(comment.created_at);
-      meta.append(author, time);
-      const body = document.createElement('div'); body.className = 'comment-body'; body.textContent = comment.body;
-      const actions = document.createElement('div'); actions.className = 'comment-actions';
-      for (const [value, symbol, count] of [[1, '👍', comment.likes], [-1, '👎', comment.dislikes]]) {
-        const button = document.createElement('button'); button.type = 'button'; button.textContent = symbol + ' ' + count;
-        button.addEventListener('click', () => vote('comment', comment.id, value, button)); actions.append(button);
-      }
-      card.append(meta, body, actions); listEl.append(card);
-    }
-  }
-  async function load() {
-    setStatus('Loading community responses…');
-    try {
-      const data = await request(API.load, { method: 'GET', headers: {} });
-      updateReactionCounts(data.reactions);
-      document.getElementById('newsletter-likes').textContent = data.newsletterVotes.likes;
-      document.getElementById('newsletter-dislikes').textContent = data.newsletterVotes.dislikes;
-      renderComments(data.comments);
-      setStatus('Responses are up to date.', 'success');
-    } catch (error) { setStatus(error.message, 'error'); }
-  }
-  async function vote(targetType, targetId, value, button) {
-    button.disabled = true;
-    try {
-      const data = await request(API.votes, { method: 'POST', body: JSON.stringify({ targetType, targetId, value, visitorId: visitorId() }) });
-      if (targetType === 'newsletter') {
-        document.getElementById('newsletter-likes').textContent = data.likes;
-        document.getElementById('newsletter-dislikes').textContent = data.dislikes;
-      } else { await load(); }
-      setStatus('Vote saved.', 'success');
-    } catch (error) { setStatus(error.message, 'error'); }
-    finally { button.disabled = false; }
-  }
-  document.querySelectorAll('[data-reaction]').forEach(button => button.addEventListener('click', async () => {
-    const reaction = button.dataset.reaction;
-    button.disabled = true;
-    try {
-      const data = await request(API.reactions, { method: 'POST', body: JSON.stringify({ reaction, visitorId: visitorId() }) });
-      document.querySelectorAll('[data-reaction]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
-      updateReactionCounts(data.reactions); setStatus('Reaction saved.', 'success');
-    } catch (error) { setStatus(error.message, 'error'); }
-    finally { button.disabled = false; }
-  }));
-  document.querySelectorAll('[data-newsletter-vote]').forEach(button => button.addEventListener('click', () => vote('newsletter', '', Number(button.dataset.newsletterVote), button)));
-  form.addEventListener('submit', async event => {
-    event.preventDefault(); const submit = form.querySelector('button[type="submit"]'); submit.disabled = true; submit.textContent = 'Publishing…';
-    const values = Object.fromEntries(new FormData(form));
-    try {
-      const data = await request(API.comments, { method: 'POST', body: JSON.stringify({ ...values, visitorId: visitorId(), startedAt }) });
-      form.reset(); setStatus(data.message, 'success'); await load();
-    } catch (error) { setStatus(error.message, 'error'); }
-    finally { submit.disabled = false; submit.textContent = 'Publish comment'; }
-  });
-  document.getElementById('copy').addEventListener('click', async () => { try { await navigator.clipboard.writeText(location.href); setStatus('Link copied.', 'success'); } catch { setStatus('Copy failed. Please copy the address bar.', 'error'); } });
+  'use strict';
+  const API={load:'/api/interactions',comments:'/api/comments',reactions:'/api/reactions',votes:'/api/votes'};
+  const ARTICLE_LABELS={story1:'01 · The Useful Pause',story2:'02 · Questions AI Cannot Answer',story3:'03 · Design the Week',story4:'04 · The Editorial Room',story5:'05 · The Strength to Revise'};
+  let allComments=[],latestVisible=5,formStartedAt=Date.now();
+  const status=document.getElementById('community-status'),form=document.getElementById('comment-form'),helpfulList=document.getElementById('helpful-list'),latestList=document.getElementById('latest-list'),olderButton=document.getElementById('older-comments');
+  function setStatus(message,type=''){status.textContent=message;status.className='status '+type}
+  function getCookie(name){return document.cookie.split('; ').find(row=>row.startsWith(name+'='))?.split('=').slice(1).join('=')||''}
+  function visitorId(){let id=getCookie('newsletter_visitor');if(!/^[0-9a-f-]{36}$/i.test(id)){id=crypto.randomUUID();document.cookie='newsletter_visitor='+id+'; Max-Age=31536000; Path=/; SameSite=Lax; Secure'}return id}
+  async function request(url,options={}){const response=await fetch(url,{...options,headers:{'Content-Type':'application/json',...(options.headers||{})}});let data={};try{data=await response.json()}catch{}if(!response.ok)throw new Error(data.error||'Something went wrong. Please try again.');return data}
+  function updateReactionCounts(totals){document.querySelectorAll('[data-reaction]').forEach(button=>button.querySelector('.reaction-count').textContent=totals?.[button.dataset.reaction]??0)}
+  function formatDate(value){return new Intl.DateTimeFormat(undefined,{dateStyle:'medium',timeStyle:'short'}).format(new Date(value))}
+  function playReactionAnimation(button){button.classList.remove('is-animating');void button.offsetWidth;button.classList.add('is-animating');setTimeout(()=>button.classList.remove('is-animating'),900)}
+  function setSelectedReaction(selected){document.querySelectorAll('[data-reaction]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.reaction===selected)))}
+  function createCommentCard(comment){const card=document.createElement('article');card.className='comment-card';const meta=document.createElement('div');meta.className='comment-meta';const author=document.createElement('strong');author.textContent=comment.display_name;const time=document.createElement('time');time.dateTime=comment.created_at;time.textContent=formatDate(comment.created_at);meta.append(author,time);card.append(meta);if(comment.article_id){const context=document.createElement('span');context.className='comment-context';context.textContent=ARTICLE_LABELS[comment.article_id]||comment.article_id;card.append(context)}const body=document.createElement('div');body.className='comment-body';body.textContent=comment.body;const actions=document.createElement('div');actions.className='comment-actions';[[1,'👍',comment.likes,'Like'],[-1,'👎',comment.dislikes,'Dislike']].forEach(([value,symbol,count,label])=>{const button=document.createElement('button');button.type='button';button.textContent=symbol+' '+count;button.setAttribute('aria-label',label+' comment by '+comment.display_name);button.addEventListener('click',()=>vote('comment',comment.id,value,button));actions.append(button)});card.append(body,actions);return card}
+  function renderInto(container,comments,emptyText){container.replaceChildren();if(!comments.length){const empty=document.createElement('p');empty.className='empty-comments';empty.textContent=emptyText;container.append(empty);return}comments.forEach(comment=>container.append(createCommentCard(comment)))}
+  function renderComments(){document.getElementById('comment-count').textContent=allComments.length+(allComments.length===1?' comment':' comments');const helpful=[...allComments].sort((a,b)=>((b.likes-b.dislikes)-(a.likes-a.dislikes))||(b.likes-a.likes)||(new Date(b.created_at)-new Date(a.created_at))).filter(c=>c.likes>0).slice(0,3);renderInto(helpfulList,helpful,allComments.length?'No reader-supported thoughts yet. Be the first to like one.':'No comments yet. Be the first reader to share a thought.');renderInto(latestList,allComments.slice(0,latestVisible),'No comments yet. Be the first reader to share a thought.');olderButton.hidden=latestVisible>=allComments.length}
+  async function load({quiet=false}={}){if(!quiet)setStatus('Loading community responses…');try{const data=await request(API.load,{method:'GET',headers:{}});updateReactionCounts(data.reactions);document.getElementById('newsletter-likes').textContent=data.newsletterVotes.likes;document.getElementById('newsletter-dislikes').textContent=data.newsletterVotes.dislikes;allComments=data.comments||[];renderComments();if(!quiet)setStatus('Responses are up to date.','success')}catch(error){setStatus(error.message,'error')}}
+  async function vote(targetType,targetId,value,button){button.disabled=true;try{const data=await request(API.votes,{method:'POST',body:JSON.stringify({targetType,targetId,value,visitorId:visitorId()})});if(targetType==='newsletter'){document.getElementById('newsletter-likes').textContent=data.likes;document.getElementById('newsletter-dislikes').textContent=data.dislikes}else await load({quiet:true});setStatus('Vote saved.','success')}catch(error){setStatus(error.message,'error')}finally{button.disabled=false}}
+  document.querySelectorAll('[data-reaction]').forEach(button=>button.addEventListener('click',async()=>{button.disabled=true;try{const reaction=button.dataset.reaction;const data=await request(API.reactions,{method:'POST',body:JSON.stringify({reaction,visitorId:visitorId()})});setSelectedReaction(data.selected||reaction);updateReactionCounts(data.reactions);playReactionAnimation(button);document.getElementById('reaction-status').textContent=button.querySelector('.reaction-label').textContent+' reaction saved.';setStatus('Reaction saved.','success')}catch(error){setStatus(error.message,'error')}finally{button.disabled=false}}));
+  document.querySelectorAll('[data-newsletter-vote]').forEach(button=>button.addEventListener('click',()=>vote('newsletter','',Number(button.dataset.newsletterVote),button)));olderButton.addEventListener('click',()=>{latestVisible+=5;renderComments()});
+  form.addEventListener('submit',async event=>{event.preventDefault();const submit=form.querySelector('button[type="submit"]');submit.disabled=true;submit.textContent='Sharing…';const values=Object.fromEntries(new FormData(form));try{const data=await request(API.comments,{method:'POST',body:JSON.stringify({...values,visitorId:visitorId(),startedAt:formStartedAt})});form.reset();formStartedAt=Date.now();latestVisible=5;setStatus(data.message,'success');await load({quiet:true})}catch(error){setStatus(error.message,'error')}finally{submit.disabled=false;submit.textContent='Share Your Thought'}});
+  async function sharePage(){try{if(navigator.share)await navigator.share({title:document.title,url:location.href});else await navigator.clipboard.writeText(location.href);const toast=document.getElementById('toast');toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),1800)}catch(error){if(error?.name!=='AbortError')setStatus('Share failed. Please copy the address bar.','error')}}document.querySelectorAll('[data-share]').forEach(button=>button.addEventListener('click',sharePage));
+  // Scroll progress and reveals
+  addEventListener('scroll',()=>{const h=document.documentElement;const max=h.scrollHeight-h.clientHeight;document.getElementById('reading-progress').style.width=(max?scrollY/max*100:0)+'%'},{passive:true});
+  const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('in');observer.unobserve(entry.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+  // Guided reading rail
+  const railLinks=[...document.querySelectorAll('[data-rail]')];
+  const railSections=railLinks.map(a=>document.getElementById(a.dataset.rail)).filter(Boolean);
+  const railObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){railLinks.forEach(a=>a.classList.toggle('active',a.dataset.rail===entry.target.id));}})},{rootMargin:'-35% 0px -55% 0px',threshold:0});railSections.forEach(section=>railObserver.observe(section));
+  // Editorial Room escape game
+  const game={seen:new Set(),time:false,word:false,key:false,solved:false,hints:0};
+  const escapeStatus=document.getElementById('escape-status'),clueLog=document.getElementById('clue-log'),rug=document.getElementById('rug'),keyEl=document.getElementById('hidden-key'),drawer=document.getElementById('drawer'),complete=document.getElementById('escape-complete'),progress=document.getElementById('escape-progress');
+  const messages={door:'Locked from the outside? No—the exit is not today’s problem.',window:'The window reflects the room back at you. Looking out adds no new evidence.',clock:'The clock stopped at 3:17. A time may matter, but a number alone opens nothing.',lamp:'The lamp works. Its light reveals the same room you already have.',plant:'Healthy leaves. Dry soil. No key in the pot.',books:'One book is upside down. Its spine reads: “READ THE ROOM, NOT ONLY THE WORDS.”',frame:'The frame says ASK BETTER QUESTIONS. The back is blank.',drawer:'The drawer needs a key. Pulling harder is still the same strategy.',rug:'The rug shifts. Something metallic catches the light underneath.'};
+  function logClue(text){const li=document.createElement('li');li.textContent=text;clueLog.prepend(li);while(clueLog.children.length>6)clueLog.lastElementChild.remove()}
+  function updateGame(){document.getElementById('inv-time').classList.toggle('has',game.time);document.getElementById('inv-word').classList.toggle('has',game.word);document.getElementById('inv-key').classList.toggle('has',game.key);const n=Number(game.time)+Number(game.word)+Number(game.key);progress.textContent=n+' / 3 ESSENTIAL STEPS';}
+  function inspectObject(name,button){if(game.solved)return;button.dataset.seen='true';game.seen.add(name);let message=messages[name];if(name==='clock'){game.time=true;message+=' You record 3:17, though you are not yet sure why.'}if(name==='books'){game.word=true;message+=' You keep the phrase “READ THE ROOM.”'}if(name==='rug'){rug.classList.add('moved');keyEl.classList.add('found');game.key=true;message+=' You found the drawer key.'}if(name==='drawer'&&game.key){drawer.classList.add('unlocked');message='The key turns. The drawer opens—and the missing editorial page slides into view.';escapeStatus.textContent=message;logClue(message);updateGame();setTimeout(()=>{game.solved=true;complete.classList.add('show');complete.setAttribute('aria-hidden','false')},450);return}escapeStatus.textContent=message;logClue(message);updateGame()}
+  document.querySelectorAll('[data-object]').forEach(button=>button.addEventListener('click',()=>inspectObject(button.dataset.object,button)));
+  document.getElementById('escape-hint').addEventListener('click',()=>{game.hints++;const text=game.hints===1?'Hint 1: an object can be important because everyone ignores it.':game.hints===2?'Hint 2: stop treating the floor as background.':game.hints===3?'Hint 3: move the rug, collect the key, then return to the drawer.':'The answer is under the rug.';escapeStatus.textContent=text;logClue(text)});
+  function resetEscape(){game.seen.clear();game.time=game.word=game.key=game.solved=false;game.hints=0;document.querySelectorAll('[data-object]').forEach(b=>delete b.dataset.seen);rug.classList.remove('moved');keyEl.classList.remove('found');drawer.classList.remove('unlocked');complete.classList.remove('show');complete.setAttribute('aria-hidden','true');clueLog.innerHTML='<li>The room is waiting. Select any object to inspect it.</li>';escapeStatus.textContent='Look around. Not every interesting object is useful—and not every ordinary object is irrelevant.';updateGame()}
+  document.getElementById('escape-reset').addEventListener('click',resetEscape);document.getElementById('play-again').addEventListener('click',resetEscape);
+  updateGame();
   load();
 })();
 </script>
-</body></html>
+</body>
+</html>

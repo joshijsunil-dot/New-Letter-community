@@ -27,7 +27,7 @@ export default async (request) => {
       WHERE newsletter_id = ${id}
       GROUP BY reaction;
     `;
-    const totals = { loved: 0, useful: 0, insightful: 0, resonated: 0 };
+    const totals = { loved: 0, useful: 0, insightful: 0, resonated: 0, taking_action: 0 };
     for (const row of rows) totals[row.reaction] = row.count;
     return json(200, { message: "Reaction saved.", reactions: totals, selected: reaction });
   } catch (error) {
